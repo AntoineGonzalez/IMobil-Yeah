@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/annonce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".activity.AnnonceActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        tools:context=".activity.AnnonceActivity">
+
+        <include
+            android:id = "@+id/app_toolbar"
+            layout="@layout/toolbar"
+            />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Addbutton" />
+
+        <TextView
+            android:id="@+id/prix_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="150dp"
+            android:background="@android:color/background_light"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ViewPagerAnnonce" />
+
+        <TextView
+            android:id="@+id/adresse_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/background_light"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/prix_textView"
+            app:layout_constraintTop_toTopOf="@+id/prix_textView" />
+
+        <TextView
+            android:id="@+id/description_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titre__description_textView" />
+
+        <TextView
+            android:id="@+id/date_textView"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:background="@color/black"
+            android:textColor="@color/lightGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/titre__description_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/lightGrey"
+            android:text="@string/descritption"
+            android:textAlignment="center"
+            android:textColor="@color/creamy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adresse_textView" />
+
+        <TextView
+            android:id="@+id/titre_caracteristique_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey"
+            android:text="@string/caracteristiques"
+            android:textAlignment="center"
+            android:textColor="@color/creamy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titre__description_textView"
+            app:layout_constraintTop_toBottomOf="@+id/description_textView" />
+
+        <TextView
+            android:id="@+id/caracteristique_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/description_textView"
+            app:layout_constraintTop_toBottomOf="@+id/titre_caracteristique_textView" />
+
+        <TextView
+            android:id="@+id/titre_vendeur_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey"
+            android:text="@string/vendeur"
+            android:textAlignment="center"
+            android:textColor="@color/creamy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titre__description_textView"
+            app:layout_constraintTop_toBottomOf="@+id/caracteristique_textView" />
+
+        <TextView
+            android:id="@+id/vendeur_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="@+id/caracteristique_textView"
+            app:layout_constraintStart_toStartOf="@+id/caracteristique_textView"
+            app:layout_constraintTop_toBottomOf="@+id/titre_vendeur_textView" />
+
+        <TextView
+            android:id="@+id/phone_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="@+id/vendeur_textView"
+            app:layout_constraintStart_toStartOf="@+id/vendeur_textView"
+            app:layout_constraintTop_toBottomOf="@+id/vendeur_textView" />
+
+        <TextView
+            android:id="@+id/mail_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="@+id/phone_textView"
+            app:layout_constraintStart_toStartOf="@+id/phone_textView"
+            app:layout_constraintTop_toBottomOf="@+id/phone_textView" />
+
+        <Button
+            android:id="@+id/Addbutton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:drawableRight="@drawable/fav"
+            android:onClick="addFavorite"
+            android:text="@string/ajouter"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_textView" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ViewPagerAnnonce"
+            android:layout_width="0dp"
+            android:layout_height="213dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_textView" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

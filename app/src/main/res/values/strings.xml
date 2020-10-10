@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IMobilYeah</string>
+    <string name="bouttonListed">Toutes les annonces</string>
+    <string name="favorite">Favoris</string>
+    <string name="descritption">Description:</string>
+    <string name="caracteristiques">Caracteristiques:</string>
+    <string name="vendeur">Vendeur:</string>
+    <string name="img_card">Photo de l\'annonce</string>
+    <string name="recentPublish">Récemment publiées:</string>
+    <string name="supprimmer">Supprimer</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="NoteTextPlaceholder">Saissisez votre commentaire.</string>
+    <string name="AjoutNoteText">Ajouter un commentaire</string>
+    <string name="noteListeText">Commentaire de l\'annonce:</string>
+    <string name="delete">Delete</string>
+    <string name="presentation">Bienvenue sur IMobilYeah!</string>
+</resources>
